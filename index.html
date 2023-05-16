@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Anime Recommendation</title>
+</head>
+
+<body>
+    <div class="title">
+        <h2> Anime Recommendation </h2>
+
+        <p class=" genres">
+            Genres: Shojo, Drama, High School Romance
+        </p>
+    </div>
+
+    <main>
+        <img src="./images/1.png" class="image_slider" alt="horimiya">
+        <img src="./images/2.png" class="image_slider" alt="horimiya">
+        <img src="./images/3.png" class="image_slider" alt="horimiya">
+        <img src="./images/4.png" class="image_slider" alt="horimiya">
+        <img src="./images/5.png" class="image_slider" alt="horimiya">
+
+        <!-- for the code without the movement in the radio button
+           <ul class="radio-buttons">
+            <li>
+              <input type="radio" name="image" id="image1" checked>
+              <label for="image1"></label>
+            </li>
+            <li>
+              <input type="radio" name="image" id="image2">
+              <label for="image2"></label>
+            </li>
+            <li>
+              <input type="radio" name="image" id="image3">
+              <label for="image3"></label>
+            </li>
+            <li>
+              <input type="radio" name="image" id="image4">
+              <label for="image4"></label>
+            </li>
+            <li>
+              <input type="radio" name="image" id="image5">
+              <label for="image5"></label>
+            </li>
+          </ul> -->
+
+    </main>
+    
+    <div class="btn">
+        <button onclick="nextSlide(-1)"> Previous </button>
+        <button onclick="nextSlide(1)"> Next </button>
+    </div>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span> 
+      <span class="dot" onclick="currentSlide(5)"></span> 
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
