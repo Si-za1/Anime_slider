@@ -41,9 +41,13 @@ function showSlides(n) {
   dots[currentIndex-1].className += " active";
 }
 
+function autoSlide() {
+  nextSlide(1); // Increment the currentIndex by 1 to move to the next slide
+}
 
-// Set interval to call nextSlide every 5 seconds.
-// setInterval(showSlides, 5000);
+// Set the interval to change slides every 3 seconds (3000 milliseconds)
+setInterval(autoSlide, 5000);
+
 
 
 
